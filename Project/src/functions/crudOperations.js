@@ -2,7 +2,6 @@ import { fireDB } from '../config'
 import { collection, addDoc, getDocs } from 'firebase/firestore'
 import { doc, getDoc } from 'firebase/firestore'
 
-// For using firebase please install package "npm install -g firebase-tools"
 const writeData = async (collectionName, data) => {
   const colRef = collection(fireDB, collectionName)
   const doc = await addDoc(colRef, data)
