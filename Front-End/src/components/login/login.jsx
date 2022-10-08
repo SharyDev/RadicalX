@@ -1,7 +1,23 @@
-import React from "react";
+import React, {useState} from "react";
 import "./login.css";
-import RadicallX from '../images/RadicallX.png'
+import Axios from "axios";
+import RadicallX from '../images/RadicallX.png';
+
 const Loginscreen = () => {
+const [emailEnt , setEmail] = useState("");
+const [passwordEnt, setPassword] = useState("");
+const Login = () => {
+  
+  Axios.post("https://localhost:3001/login", {
+    email: emailEnt,
+    password: passwordEnt,
+  }
+  )
+  .then((response) => {
+    console.log(response);
+  });
+};
+
   return (
     <>
       <div className="main">
@@ -17,8 +33,12 @@ const Loginscreen = () => {
                   Login
                 </label>
 
-                <input type="email" name="email" placeholder="Email" />
-                <input type="text" name="password" placeholder="Password" />
+                <input type="email" name="email" placeholder="Email" onChange={(e)=>{setEmail(e.target.value);
+                }} 
+                />
+                <input type="password" name="password" placeholder="Password" onChange={(e) => {
+                  setPassword(e.target.value);
+                }} />
               </div>
               <div className="check-forg">
                 <label>
@@ -28,7 +48,7 @@ const Loginscreen = () => {
                 <p>Forgot Password</p>
               </div>
               <div>
-                <button type="submit">Login</button>
+                <button type="submit" onClick={Login}>Login</button>
               </div>
             </form>
           </div>
