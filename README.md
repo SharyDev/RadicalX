@@ -10,3 +10,16 @@
 [![Hacktoberfest-22](https://img.shields.io/static/v1.svg?label=Hacktoberfest-22&message=accepted&color=red)](https://github.com/SharyDev/RadicalX)
 
 </div>
+
+## 📌Register for Hackoberfest.
+
+1. Register your GitHub ID on [Hackoberfest Website](https://hacktoberfest.digitalocean.com/)
+
+2. Fork this repository.
+
+## How to clone from your repo
+
+Fork this repo.
+Go to directory where you want to clone the file.
+Open git on that sepecific folder.
+run "git clone https://github.com/your-username/RadicalX.git" into git terminal.
