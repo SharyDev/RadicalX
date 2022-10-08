@@ -22,4 +22,4 @@
 Fork this repo. \
 Go to directory where you want to clone the file. \
 Open git on that sepecific folder. \
-run "git clone https://github.com/your-username/RadicalX.git" into git terminal. \
+run "git clone https://github.com/your-username/RadicalX.git" into git terminal. 
